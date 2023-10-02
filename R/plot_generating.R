@@ -3,11 +3,13 @@
 #' @param data using an inner dataset "heart"
 #' @param variable "
 #'
+#' @import ggplot2
 #' @return
 #' @export
 #'
 #'
 #' @examples
+#'
 plot_generating=function(data=heart, variable){
 
 
