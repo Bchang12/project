@@ -11,7 +11,7 @@
 predict_regression_model = function(data, predictors, new_data) {
   formula = paste("output", "~", paste(predictors, collapse = " + "))
   model = glm(formula, family=binomial, data = data)
-  predictions = predict(model, newdata = new_data)
+  predictions = predict(model, newdata = new_data,type="response")
 
   return(predictions)
 }
