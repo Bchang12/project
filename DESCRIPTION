@@ -1,11 +1,10 @@
 Package: project
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Package for bios 524 project 
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Beomchang Kim
+Maintainer: The package maintainer <kimb12@vcu.edu>
+Description: functions for plotting and fitting a model
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
