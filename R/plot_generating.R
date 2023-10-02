@@ -15,17 +15,17 @@ plot_generating=function(data=heart, variable){
 
 
   if (is.character(data[[variable]])){
-    p1=ggplot2::ggplot()+ggplot2::geom_bar(aes(x=.data[[variable]]),data=data)
+    p1=ggplot2::ggplot()+ggplot2::geom_bar(ggplot2::aes(x=.data[[variable]]),data=data)
 
     if(variable=="cp"){
-      p1_1= p1+ggplot2::labs(title="Chest pain type",
-                    subtitle="0:typical angina, 1:atypical angina, 2:non-anginal pain, 3:asymptomatic" )+ggplot2::theme_bw()
+      p1_1= p1+ggplot2::labs(ggplot2::title="Chest pain type",
+                             ggplot2::subtitle="0:typical angina, 1:atypical angina, 2:non-anginal pain, 3:asymptomatic" )+ggplot2::theme_bw()
       print(p1_1)
     }
 
     else if(variable=="fbs"){
-      p1_1= p1+ggplot2::labs(title="fasting blood sugar > 120 mg/dl",
-                    subtitle="0 = False, 1 = True" )+ggplot2::theme_bw()
+      p1_1= p1+ggplot2::labs(ggplot2::title="fasting blood sugar > 120 mg/dl",
+                             ggplot2::subtitle="0 = False, 1 = True" )+ggplot2::theme_bw()
       print(p1_1)
     }
 
@@ -62,7 +62,7 @@ plot_generating=function(data=heart, variable){
   }
 
   else if(variable=="output"){
-    p3=ggplot2::ggplot()+ggplot2::geom_bar(aes(x=as.character(.data[[variable]])),data=data)+
+    p3=ggplot2::ggplot()+ggplot2::geom_bar(ggplot2::aes(x=as.character(.data[[variable]])),data=data)+
       ggplot2::labs(x="output",title="Binary result of heart attack chance",
                     subtitle="0: less chance of heart attack\n1: more chance of heart attack")+ggplot2::theme_bw()
     print(p3)
@@ -71,7 +71,7 @@ plot_generating=function(data=heart, variable){
 
 
   else{
-    p2=ggplot2::ggplot()+ggplot2::geom_boxplot(aes(x=.data[[variable]]),data=data)
+    p2=ggplot2::ggplot()+ggplot2::geom_boxplot(ggplot2::aes(x=.data[[variable]]),data=data)
 
     if(variable=="trtbps"){
       p2_1=p2+ggplot2::labs(title="resting blood pressure (in mm Hg)",x="resting blood pressure (in mm Hg)")+ggplot2::theme_bw()
