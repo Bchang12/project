@@ -3,6 +3,7 @@
 #' @param data using an inner dataset "heart"
 #' @param variable "
 #'
+#' @import tidyverse
 #' @import ggplot2
 #' @return
 #' @export
