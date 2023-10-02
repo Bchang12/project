@@ -18,14 +18,14 @@ plot_generating=function(data=heart, variable){
     p1=ggplot2::ggplot()+ggplot2::geom_bar(ggplot2::aes(x=.data[[variable]]),data=data)
 
     if(variable=="cp"){
-      p1_1= p1+ggplot2::labs(ggplot2::title="Chest pain type",
-                             ggplot2::subtitle="0:typical angina, 1:atypical angina, 2:non-anginal pain, 3:asymptomatic" )+ggplot2::theme_bw()
+      p1_1= p1+ggplot2::labs(title="Chest pain type",
+                             subtitle="0:typical angina, 1:atypical angina, 2:non-anginal pain, 3:asymptomatic" )+theme_bw()
       print(p1_1)
     }
 
     else if(variable=="fbs"){
-      p1_1= p1+ggplot2::labs(ggplot2::title="fasting blood sugar > 120 mg/dl",
-                             ggplot2::subtitle="0 = False, 1 = True" )+ggplot2::theme_bw()
+      p1_1= p1+ggplot2::labs(title="fasting blood sugar > 120 mg/dl",
+                             subtitle="0 = False, 1 = True" )+ggplot2::theme_bw()
       print(p1_1)
     }
 
