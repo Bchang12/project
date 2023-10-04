@@ -3,8 +3,7 @@
 \docType{data}
 \name{heart}
 \alias{heart}
-\title{Heart Attack Dataset
-Report ...}
+\title{Heart Attack Analysis & Prediction Dataset}
 \format{
 A data frame with 303rows and 14 columns:
 \describe{
@@ -31,7 +30,6 @@ A data frame with 303rows and 14 columns:
 heart
 }
 \description{
-Heart Attack Dataset
-Report ...
+This dataset came from the kaggle for heart attack analysis
 }
 \keyword{datasets}

@@ -1,5 +1,6 @@
-#' Heart Attack Dataset
-#' Report ...
+#' Heart Attack Analysis & Prediction Dataset
+#'
+#' This dataset came from the kaggle for heart attack analysis
 #'
 #' @format A data frame with 303rows and 14 columns:
 #' \describe{
