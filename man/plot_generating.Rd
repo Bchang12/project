@@ -2,15 +2,20 @@
 % Please edit documentation in R/plot_generating.R
 \name{plot_generating}
 \alias{plot_generating}
-\title{Plot a boxplot or barplot of variables for inner dataset "heart"}
+\title{Visualizing the heart data set}
 \usage{
 plot_generating(data = heart, variable)
 }
 \arguments{
 \item{data}{using an inner dataset "heart"}
 
-\item{variable}{"}
+\item{variable}{choose the variable to visualize}
 }
 \description{
-Plot a boxplot or barplot of variables for inner dataset "heart"
+Plot a boxplot or barplot of variables for inner dataset "heart". Look at the data set document for variable input
+}
+\examples{
+plot_generating(data=heart, variable="cp")
+
+
 }

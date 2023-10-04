@@ -7,11 +7,19 @@
 predict_regression_model(data, predictors, new_data)
 }
 \arguments{
-\item{new_data}{}
+\item{predictors}{possible predictors in heart attack data. Please use the original "heart" data variable name.}
+
+\item{new_data}{a data frame for new observations}
 }
 \value{
 probability of new observation's heart attack based on the predictors
 }
 \description{
-prediction for logistic regression
+a function return the predicted probability of a fitted logisitc regression model.
+}
+\examples{
+new_data=data.frame(age=50, sex="Male")
+predict_regression_model(data=heart, predictors=c("age","sex"), new_data=new_data)
+predict_regression_model(predictors=c("age","sex"), new_data=new_data)
+
 }

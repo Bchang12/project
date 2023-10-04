@@ -7,11 +7,15 @@
 logistic_model(data = heart, predictors)
 }
 \arguments{
-\item{predictors}{}
+\item{predictors}{possible predictors in heart attack data. Please use the original "heart" data variable name.}
 }
 \value{
 summary of logistic model
 }
 \description{
-logistic model function
+Fit a logistic regression model to find a heart attack probability. Please refer to "heart" data document for variable names.
+}
+\examples{
+logistic_model(data=heart, c("age","cp"))
+logistic_model(c("age","cp"))
 }

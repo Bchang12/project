@@ -1,7 +1,8 @@
-#' Plot a boxplot or barplot of variables for inner dataset "heart"
+#' Visualizing the heart data set
 #'
+#' Plot a boxplot or barplot of variables for inner dataset "heart". Look at the data set document for variable input
 #' @param data using an inner dataset "heart"
-#' @param variable "
+#' @param variable choose the variable to visualize
 #'
 #' @import tidyverse
 #' @import ggplot2
@@ -9,7 +10,8 @@
 #' @export
 #'
 #'
-#' @examples
+#' @examples plot_generating(data=heart, variable="cp")
+#'
 #'
 plot_generating=function(data=heart, variable){
 
